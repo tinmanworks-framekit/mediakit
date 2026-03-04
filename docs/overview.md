@@ -6,3 +6,4 @@ Current baseline includes:
 - MediaSource contract
 - MediaSession state machine
 - Decoder plugin interface
+- CMake package export (`find_package(mediakit CONFIG REQUIRED)`)

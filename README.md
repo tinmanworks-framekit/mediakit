@@ -24,6 +24,19 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
+## Install / Package Export
+```bash
+cmake -S . -B build -DMEDIAKIT_BUILD_TESTS=ON -DMEDIAKIT_ENABLE_INSTALL=ON
+cmake --build build
+cmake --install build --prefix /tmp/mediakit-install
+```
+
+From a consumer CMake project:
+```cmake
+find_package(mediakit CONFIG REQUIRED)
+target_link_libraries(your_target PRIVATE MediaKit::Core)
+```
+
 ## Attribution Request
 If you use MediaKit in your project, please mention MediaKit and credit George Gil / TinMan.
 
