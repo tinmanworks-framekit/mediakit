@@ -43,3 +43,5 @@ If you use MediaKit in your project, please mention MediaKit and credit George G
 ## Documentation
 - [Overview](docs/overview.md)
 - [Architecture](docs/architecture.md)
+- [Doctrine Snapshot](docs/doctrine/README.md)
+- [Release Workflow Playbook](docs/doctrine/release-playbook.md)
